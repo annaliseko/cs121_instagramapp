@@ -1,0 +1,10 @@
+<h2>View Post</h2>
+<hr>
+
+<%= image_tag(@post.image.url(:medium), :style => "border: 15px  dotted #cfc2ed") %>
+<br>
+<h4><%= @post.description %></h4>
+<br>
+<%= link_to "Edit Post", edit_post_path(@post) %>
+
+<hr>

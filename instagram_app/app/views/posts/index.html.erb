@@ -1,0 +1,10 @@
+<h2><b>~annaliseko's Instagram Feed~<b></h2>
+<br>
+<% @posts.reverse.each do |x| %>
+		<%= link_to (image_tag x.image.url(:medium), :style => "border: 15px  dotted #cfc2ed"), post_path(x) %>
+		<br>
+		<h4><%= x.description %></h4>
+		<br>
+		<hr>
+		<br>
+<% end %>
